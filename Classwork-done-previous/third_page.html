@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Third Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 1em;
+            padding: .5em;
+            text-align: left;
+        }
+
+        h3 {
+            background-color: black;
+            color: #ffffff;
+            margin: 1em;
+            padding: .5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ol {
+            counter-reset: item;
+            font-family: 'Times New Roman', Times, serif;
+            padding: .2em;
+            font-size: 12pt;
+        }
+
+        li {
+            display: block;
+            color: #666666;
+            font-size: 12pt;
+            margin: .2em;
+        }
+
+        li:before {
+            content: counters(item, ".") " ";
+            counter-increment: item;
+        }
+        .last-button {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+        }
+
+        .last-button button {
+            background-color: greenyellow;
+            font-size: 12pt;
+            padding: .5em;
+            width: 11em;
+            border-radius: 2em;
+            font-weight: 600;
+        }
+
+        .last-button button:hover {
+            background-color: rgb(177, 231, 96);
+            cursor: pointer;
+        }
+
+        .last-button button a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Contents</h1>
+    </div>
+    <div>
+        <h3>Chapter 1</h3>
+        <p>Introduction to Computer</p>
+        <ol>
+            <li>Concept and Characteristics of a Computer
+                <ol>
+                    <li>Introduction to Computers</li>
+                    <li>Data and Information</li>
+                    <li>Charasteristics of computer</li>
+                    <li>Word length</li>
+                    <li>Accuracy</li>
+                    <li>Dilligence</li>
+                    <li>Versatility</li>
+                    <li>Storage</li>
+                    <li>Automatic</li>
+                    <li>Power of Remembering</li>
+                </ol>
+            </li>
+            <li>Application of Computers
+                <ol>
+                    <li>Banking and Financial Company</li>
+                    <li>Education</li>
+                    <li>Industries</li>
+                    <li>Research</li>
+                    <li>Hospital</li>
+                    <li>Data Processing</li>
+                    <li>Science and Engineering</li>
+                    <li>Offices</li>
+                    <li>Business Advertisements</li>
+                    <li>Communication and Data Transfer</li>
+                    <li>Library</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="last-button">
+        <a href="second_page.html"><button>Second Page</button></a>
+        <a href="back-cover.html"><button>Last Cover Page</button></a>
+    </div>
+
+</body>
+
+</html>
